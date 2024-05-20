@@ -5,6 +5,7 @@ regioes = {
     "direita": 0,
     "inferior": 0
 }
+
 n = int(input())
 
 for _ in range(n):
@@ -24,6 +25,7 @@ for _ in range(n):
                 regioes["direita"] += matriz[i][j]
             if i == 5:
                 regioes["inferior"] += matriz[i][j]
+
 
 lista = []
 

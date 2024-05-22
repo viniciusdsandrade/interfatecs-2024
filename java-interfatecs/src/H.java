@@ -43,17 +43,15 @@ public class H {
     }
 
     public static int pivor(int a, int b, int c) {
-        if ((a <= b && b <= c) || (c <= b && b <= a)) return b;
-        else if ((b <= a && a <= c) || (c <= a && a <= b)) return a;
-        else return c;
-
-    }
-
-    public static int pivor2(int a, int b, int c) {
         if (a > b && a < c || a < b && a > c) return a;
         else if (b > a && b < c || b < a && b > c) return b;
         else return c;
+    }
 
+    public static int pivor2(int a, int b, int c) {
+        if ((a <= b && b <= c) || (c <= b && b <= a)) return b;
+        else if ((b <= a && a <= c) || (c <= a && a <= b)) return a;
+        else return c;
     }
 
     public static int pivor3(int a, int b, int c) {
@@ -73,7 +71,7 @@ public class H {
         int result = 0, result2 = 0, result3 = 0, result4 = 0;
         double start, end, start2, end2, start3, end3, start4, end4;
 
-        final long repeat = 10_000;
+        final long repeat = 10000000;
 
         for (int i = 0; i < repeat; i++) {
             start = System.nanoTime();

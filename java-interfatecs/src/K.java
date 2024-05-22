@@ -46,6 +46,16 @@ public class K {
         testIsFakePrime(999983);
     }
 
+    public static String isFakePrime(int n) {
+        if (n <= 2) return "nao";
+
+        for (int i = 2; i * i <= n; i++)
+            if (n % i == 0)
+                return "nao";
+
+        return "sim";
+    }
+
     public static void testIsFakePrime(int n) {
         System.out.println("Input: " + n);
 
@@ -62,14 +72,5 @@ public class K {
 
         System.out.println("Output: " + result);
         System.out.println("Average Time: " + averageTime + " ns\n");
-    }
-
-    public static String isFakePrime(int n) {
-        if (n <= 2) return "nao";
-
-        for (int i = 2; i * i <= n; i++)
-            if (n % i == 0) return "nao";
-
-        return "sim";
     }
 }

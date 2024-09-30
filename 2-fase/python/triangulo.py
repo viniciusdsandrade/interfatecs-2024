@@ -1,6 +1,3 @@
-from math import sqrt
-
-
 # Problema K
 
 # Figura triângulo
@@ -31,6 +28,8 @@ from math import sqrt
 # 27
 # Exemplo de Saída 3
 # 3I
+
+from math import sqrt
 
 
 def calcular_area_triangulo(a: float, b: float, c: float) -> float:
